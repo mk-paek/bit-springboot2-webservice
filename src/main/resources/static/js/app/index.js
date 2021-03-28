@@ -32,10 +32,6 @@ var main = {
         }).fail(function (error) {
             alert(JSON.stringify(error));
         });
-    }       // 나중에 삭제
-};          // 나중에 삭제
-main.init();  // 나중에 삭제
-// 여기까지
     },
     update : function () {
         var data = {
@@ -75,5 +71,4 @@ main.init();  // 나중에 삭제
     }
 
 };
-
 main.init();

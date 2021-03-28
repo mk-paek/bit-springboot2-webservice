@@ -1,6 +1,7 @@
 package com.example.web.springboot.domain.user;
 
 import com.example.web.springboot.domain.BaseTimeEntity;
+
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -33,7 +34,7 @@ public class User extends BaseTimeEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private Role role;
+    private Role role;  // guest, user
 
     @Builder
     public User(String name, String email, String picture, Role role) {
